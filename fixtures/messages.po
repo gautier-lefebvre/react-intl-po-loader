@@ -1,0 +1,26 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2019-06-12T08:59:16.118Z\n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. [global.validate]
+#. defaultMessage is:
+#. "Validate"
+#: .tmp/i18n/messages.json
+msgctxt "global.validate"
+msgid "Validate"
+msgstr "Valider"
+
+#. [global.cancel]
+#. defaultMessage is:
+#. "Cancel"
+#: .tmp/i18n/messages.json
+msgctxt "global.cancel"
+msgid "Cancel"
+msgstr "Annuler"
