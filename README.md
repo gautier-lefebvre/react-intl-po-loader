@@ -11,7 +11,7 @@ Classic workflow for using this loader is:
 - `.tmp/i18n/messages.pot` the output file.
 
 ```sh
-$ react-intl-po json2pot .tmp/i18n/messages.json -o .tmp/i18n/messages.pot -c id
+react-intl-po json2pot .tmp/i18n/messages.json -o .tmp/i18n/messages.pot -c id
 ```
 
 Don't forget the `-c id` option to set the context in the POT file, it will be used by the
@@ -23,9 +23,13 @@ loader to create the `id => msg` map.
 
 ## Installing / Getting started
 
+1. Install `react-intl-po-loader`.
+
 ```shell
 yarn add --dev react-intl-po-loader
 ```
+
+2. Add a rule for po files in webpack.
 
 ```js
 // webpack.config.js
@@ -57,18 +61,37 @@ module.exports = {
 };
 ```
 
+3. Import po files in your code.
+
+```shell
+# messages.po
+
+msgctxt "global.validate"
+msgid "Validate"
+msgstr "Valider"
+
+msgctxt "global.cancel"
+msgid "Cancel"
+msgstr "Annuler"
+```
+
 ```js
 // Your code.
 import messages from './messages.po';
+
+// messages =>
+// {
+//   "global.validate": "Valider",
+//   "global.cancel": "Cancel",
+// }
 ```
 
 ## Options
 
 - **[po2json]** *(Object)* - `po2json#parse()` options (see [their documentation](https://github.com/mikeedwards/po2json#methods)).
 
-
 ## Tests
 
 ```shell
-$ yarn test
+yarn test
 ```
