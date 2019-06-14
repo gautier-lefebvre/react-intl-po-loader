@@ -82,7 +82,7 @@ import messages from './messages.po';
 // messages =>
 // {
 //   "global.validate": "Valider",
-//   "global.cancel": "Cancel",
+//   "global.cancel": "Annuler",
 // }
 ```
 
