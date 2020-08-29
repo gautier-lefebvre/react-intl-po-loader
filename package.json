@@ -1,6 +1,6 @@
 {
   "name": "react-intl-po-loader",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Webpack loader for PO files generated with react-intl-po",
   "main": "lib/index.js",
   "author": "Gautier Lefebvre",
@@ -18,18 +18,18 @@
   "devDependencies": {
     "@commitlint/cli": "^8.0.0",
     "@commitlint/config-conventional": "^8.0.0",
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.17.3",
-    "husky": "^2.4.1",
-    "jest": "^24.8.0",
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "husky": "^4.2.5",
+    "jest": "^26.4.2",
     "json-loader": "^0.5.7",
-    "lint-staged": "^8.2.1",
-    "memory-fs": "^0.4.1",
-    "webpack": "^4.34.0"
+    "lint-staged": "^10.2.13",
+    "memory-fs": "^0.5.0",
+    "webpack": "^4.44.1"
   },
   "dependencies": {
-    "loader-utils": "^1.2.3",
+    "loader-utils": "^2.0.0",
     "po2json": "^0.4.5"
   }
 }
