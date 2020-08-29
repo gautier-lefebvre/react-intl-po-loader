@@ -90,6 +90,8 @@ import messages from './messages.po';
 
 - **[po2json]** *(Object)* - `po2json#parse()` options (see [their documentation](https://github.com/mikeedwards/po2json#methods)).
 
+- **[useDefaultMessage]** *(boolean)* - If `true`, when a translation is missing, use the untranslated message. This can be useful when using `react-intl` without parser.
+
 ## Tests
 
 ```shell
